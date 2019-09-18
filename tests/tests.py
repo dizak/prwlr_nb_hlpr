@@ -16,3 +16,9 @@ class ObjectsTests(TestCase):
         Set up the environment for the <objects> submodule tests
         """
         from prwlr_nb_hlpr import objects
+        self.objects = objects
+
+        self.ref_list_without = list('fooba')
+        self.tes_list = list('foobar')
+        self.tes_char = 'r'
+
