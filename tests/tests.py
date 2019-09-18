@@ -1,5 +1,5 @@
 """
-This module tests the functionalities of the other modules included in this 
+This module tests the functionalities of the other modules included in this
 package.
 """
 
