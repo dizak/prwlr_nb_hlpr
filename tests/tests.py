@@ -15,8 +15,8 @@ class ObjectsTests(TestCase):
         """
         Set up the environment for the <objects> submodule tests
         """
-        from prwlr_nb_hlpr import objects
-        self.objects = objects
+        from prwlr_nb_hlpr.objects import iterables
+        self.iterables = iterables
 
         self.ref_list_without = list('fooba')
         self.tes_list = list('foobar')
@@ -28,6 +28,6 @@ class ObjectsTests(TestCase):
         """
 
         self.assertListEqual(
-            self.objects.listx().without(self.tes_char),
+            self.iterables.listx(self.tes_list).without(self.tes_char),
             self.ref_list_without,
         )
