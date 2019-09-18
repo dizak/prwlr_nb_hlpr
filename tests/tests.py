@@ -22,3 +22,12 @@ class ObjectsTests(TestCase):
         self.tes_list = list('foobar')
         self.tes_char = 'r'
 
+    def test_without(self):
+        """
+        Test if listx.without method returns correct value
+        """
+
+        self.assertListEqual(
+            self.objects.listx().without(self.tes_char),
+            self.ref_list_without,
+        )
