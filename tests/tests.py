@@ -7,7 +7,7 @@ package.
 from unittest import TestCase
 
 
-class ObjectsTests(TestCase):
+class objectsTests(TestCase):
     """
     Tests of the custom objects functionalities from the <objects> submodule
     """
